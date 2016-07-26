@@ -5,4 +5,4 @@ MAINTAINER joeyrideout
 # Set up Apache configuration
 COPY /pf.conf /etc/apache2/sites-available/pf.conf
 RUN a2dissite 000-default.conf
-RUN service apache2 reload
+RUN service apache2 start
